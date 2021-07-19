@@ -20,6 +20,7 @@ Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain
 - 3x Wago PFC200 PLCs
 - A Wago TP600 PIO3 touch panel
 - A Google-cloud server (or optionally a computer that can host the google server locally).
+- An MQTT-broker
 
 ## Installation
 
