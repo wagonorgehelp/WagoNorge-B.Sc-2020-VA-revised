@@ -9,4 +9,4 @@ Credits to the original authors:
 - Jone Vassbø 
 - Peder Ward
 
-Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain aspects are obsolete, missing installation steps and fixes are presented in the repository)
+Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain aspects are obsolete, missing installation steps and fixes are presented in this repository)
