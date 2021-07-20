@@ -6,7 +6,7 @@
 - All devices has Docker installed. 
 - An SSH client.
 - Internet connection on the device. 
-- A local OPCUA-cient. Recommeded: UAExpert. 
+- A local OPCUA-client. Recommeded: UAExpert. 
 - An account on the Docker-hub https://hub.docker.com/
 - Docker Desktop installed locally on your computer, with the setup complete and docker running. 
 - Git Bash installed locally to access to local Docker Environment
