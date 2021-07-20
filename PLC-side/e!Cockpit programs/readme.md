@@ -12,7 +12,7 @@ Access the the WBM for the appropiate Wago device, and repeat the process for al
 ### Settings
  1. Configuration -> Networking -> TCP/IP Configuration
     - Make sure that the PLC has a static IP-address setup in the range of the router in the LAN. 
-   - Manually assign a custom DNS Server: e.g. 8.8.8.8
+    - Manually assign a custom DNS Server: e.g. 8.8.8.8
  2. Networking -> Routing 
     - Enable "IP Forwarding through multiple interfaces"
     - Setup a Default static route that corresponds with the router in the LAN. 
@@ -21,12 +21,14 @@ Access the the WBM for the appropiate Wago device, and repeat the process for al
  4. Pors and Services -> Network Services
     - Just enable everything. 
  5. ... -> PLC Runtime Services
-    - 
+    - CODESYS 2: enable webserver and communication. 
+    - e!RUNTIME: enable webserver. 
 
 
-
-### Installing CoDeSys OPC UA Server 
+### Installing CoDeSys OPC UA Server
+Wagos own OPC UA Server does no longer support 
 
 ### Install Docker-ipk
 
+## Setup in e!Cockpit
 
