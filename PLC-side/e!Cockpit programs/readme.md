@@ -65,8 +65,14 @@ Follow this guide: https://github.com/WAGO/docker-ipk
 ### Install visualization profile for HMI
 For the HMI visualization to look correctly the vizualization profile needs to be installed.
 1. Download "styledef.visustyle.xml"
-2. 
+2. In the vizualization profile, click the lightning bolt in the upper right corner of "Style Settings". 
+3. Click open style editor. Then it takes a couple of seconds to boot. 
+4. In Style Editor, click File -> Open and then select "styleddef.visustyle.xml" you just downloaded. 
+5. Once it opens, remember the name, click File -> Save and install. 
+6. Close Style Editor. 
+7. Make sure that the installed style is selected under Style Settings -> Selected style. 
 
 
-### Add image pool in HMI
-
+### Image pool in HMI
+- Make sure the image pool "WAGO" is within the application and device strucutre. 
+- If not. do
