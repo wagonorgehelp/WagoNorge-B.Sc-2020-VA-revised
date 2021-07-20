@@ -41,12 +41,12 @@ MQTT_PORT=1883
 MQTT_PUBLISH_PV_SUFFIX=Pv
 ```
 8. Chang it accordingly
-  - "OPC_UA_SERVER" OPC UA client end-point IP is currently set to localhost (172.17.0.1)
-  - "OPC_UA_ID" should contain what every is after "|var|" until the first "." in step 6.
-  - "OPC_UA_APP" should contain what ever is after the first "." until the next. 
-  - "MQTT_BROKER" should contain the URL of your desidered MQTT broker. 
-  - "MQTT_PORT" should contain the port of your desired MQTT broker. 
-  - "MQTT_PUBLISH_Pv_SUFFIX" leave unchanged. 
+   - "OPC_UA_SERVER" OPC UA client end-point IP is currently set to localhost (172.17.0.1)
+   - "OPC_UA_ID" should contain what every is after "|var|" until the first "." in step 6.
+   - "OPC_UA_APP" should contain what ever is after the first "." until the next. 
+   - "MQTT_BROKER" should contain the URL of your desidered MQTT broker. 
+   - "MQTT_PORT" should contain the port of your desired MQTT broker. 
+   - "MQTT_PUBLISH_Pv_SUFFIX" leave unchanged. 
 
 
 ## Installation
