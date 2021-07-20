@@ -46,5 +46,9 @@ Follow this guide: https://github.com/WAGO/docker-ipk
 1. Dowload the e!Cockpit program. 
    - Option 1: Create a new project and import the .export files. 
    - Option 2: Download and run .ecp files. 
+2. Set it up with your desired controller. Either by changing the PLC type. If this causes unfixable errors: Add your controller and copy-paste the contents from the original controller. (libraries should be manually installed.
+3. Install the libraries.
+   - Required libraries:
+    - 
  
 
