@@ -30,7 +30,7 @@ Wagos own OPC UA Server does no longer support the setup of multiple node IDs fo
 
 1. Download the IPK: https://wago.sharefile.eu/share/view/s311dc640445b497cb356dbc9fb4b20b5
 2. Unpack/unzip it.
-3. In WBM: Configuration -> software Uploads. 
+3. In WBM: Configuration -> software Uploads. Upload the .ipk file. 
 4. Wait a couple of minutes for the software to install. 
 5. Verify the installation by going to Fieldbus -> OPCUA. There should now, only be a single option available. 
 
