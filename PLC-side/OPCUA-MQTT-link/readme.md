@@ -66,6 +66,11 @@ MQTT_PUBLISH_PV_SUFFIX=Pv
 10. Open the "push.bat"-file, make sure that your own and the correct docker-hub repository is selected (before "--push"). Save and close. 
 11. Build and push the docker image, with all the files in this folder, by double-clicking the "push.bat"-file. Verify that it pushed correctly by checking the Docker Hub. 
 
+### Setting up the PLCs
+This process is repeated for all 3 PLCs. For simplicity, start with PLC1. 
+ 1. Same is for the setup for the HMI. Gather the NodeId string for PLCX by connecting to the OPCUA server with UAExpert for example. 
+ 2.   
+
 ## Installation
 
 
