@@ -24,9 +24,21 @@ This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow m
 3. Within UAExpert, in Address Space, navigate Root -> Objects -> DeviceSet -> TP 600... -> Application -> GlobalVars -> HMI.
 4. Click on any variable marked with a green label. 
 5. Node information should be available in the "Attributes" tab on the right-hand side. 
-6. Doble click on the "Identifier" value within "NodeId". Copy and paste the identifier string to a clipboard. It may look something like this: 
+6. Doble click on the "Identifier" value within "NodeId". Copy and paste the identifier string to notepad or something like that. It may look something like this: 
 ```
 |var|TP 600 7.0 800x480 PIO3 CP.Application.HMI.AliveCounterPlc1Pv
+```
+7. Now crossreference this with the contents of the .env file:
+```
+WAIT_TIME=1
+OPC_UA_SERVER=172.17.0.1
+OPC_UA_SERVER_USERNAME=admin
+OPC_UA_SERVER_PASSWORD=wago
+OPC_UA_ID=TP 600 7.0 800x480 PIO3 CP
+OPC_UA_APP=Application
+MQTT_BROKER=broker.hivemq.com
+MQTT_PORT=1883
+MQTT_PUBLISH_PV_SUFFIX=Pv
 ```
 
 ## Installation
