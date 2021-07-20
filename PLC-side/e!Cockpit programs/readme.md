@@ -59,5 +59,9 @@ Follow this guide: https://github.com/WAGO/docker-ipk
    - WagoAppJSON
    - WagoAppString
    - WagoAppTime
- 
+ 5. Make sure there is a "Symbol Configuration". Within it make sure "HMI" and "STATUS" is checkmarked along with all variables/structs underneath. 
+ 6. Rebuild the program and make sure that it runs without errors. Connect and download to the device. 
+
+### Install visualization profile for HMI
+
 
