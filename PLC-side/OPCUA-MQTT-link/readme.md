@@ -25,9 +25,9 @@ This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow m
 4. Click on any variable marked with a green label. 
 5. Node information should be available in the "Attributes" tab on the right-hand side. 
 6. Doble click on the "Identifier" value within "NodeId". Copy and paste the identifier string to a clipboard. It may look something like this: 
-´´´
+'''txt
 |var|TP 600 7.0 800x480 PIO3 CP.Application.HMI.AliveCounterPlc1Pv
-´´´
+'''
 
 ## Installation
 
