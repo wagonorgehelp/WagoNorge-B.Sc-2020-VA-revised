@@ -44,7 +44,7 @@ Follow this guide: https://github.com/WAGO/docker-ipk
 
 ### Download and setup
 1. Dowload the e!Cockpit program. 
-  a. Option 1: Create a new project and import the .export files. 
-  b. Option 2: Download and run .ecp files. 
+ - Option 1: Create a new project and import the .export files. 
+ - Option 2: Download and run .ecp files. 
  
 
