@@ -35,8 +35,9 @@ Wagos own OPC UA Server does no longer support the setup of multiple node IDs fo
 5. Verify the installation by going to Fieldbus -> OPCUA. There should now, only be a single option available. 
 
 ### Install Docker-ipk
-The OPCUA-MQTT-link runs as a Docker-container. Therefore 
+The OPCUA-MQTT-link runs as a Docker-container. Therefore docker needs to be installed on the device.
 
+Follow this guide: https://github.com/WAGO/docker-ipk
 
 
 ## Setup in e!Cockpit
