@@ -65,3 +65,7 @@ Follow this guide: https://github.com/WAGO/docker-ipk
 ### Install visualization profile for HMI
 For the HMI visualization to look correctly the vizualization profile needs to be installed.
 1. Download 
+
+
+### Add image pool in HMI
+
