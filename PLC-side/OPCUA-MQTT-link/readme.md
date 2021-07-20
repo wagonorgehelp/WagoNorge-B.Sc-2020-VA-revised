@@ -7,7 +7,13 @@
 - An SSH client.
 - Internet connection on the device. 
 
+Recommended:
+ - Docker Desktop installed locally on your computer.
+ - Visual Studio Code or Notepad++ for editing files
+
 ## Setup 
+NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. 
+
 
 ## Installation
 
