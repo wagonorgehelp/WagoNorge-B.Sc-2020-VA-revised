@@ -7,6 +7,8 @@
 - An SSH client.
 - Internet connection on the device. 
 
+## Setup 
+
 ## Installation
 
 
