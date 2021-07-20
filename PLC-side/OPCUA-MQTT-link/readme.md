@@ -19,7 +19,8 @@ NB! For external users: within the .bat executables and all dockerfiles. Please 
 This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
 - Download and unpack "OPCUA_MQTT_link.zip".
 
-Create a builx builder (required to push images to docker-hub, since the files are too large to be built on the device):
+### Create a builx builder 
+Required to push images to docker-hub, since the files are too large to be built on the device
 1. Open Git bash.
 2. Add builder by copy pasting the commands
 ```
