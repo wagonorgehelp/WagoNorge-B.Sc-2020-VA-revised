@@ -1,9 +1,5 @@
 # Installation PLC-side
 
-
-## Option 1: installing from a raw file
-
-## Option 2: installing from a .export
-
-## Required: Installing visualization profile and icons
+1. Setup and install the e!cockpit programs (follow the readme files)
+2. Setup and install the OPCUA-MQTT-link Docker image and container
 
