@@ -68,10 +68,28 @@ MQTT_PUBLISH_PV_SUFFIX=Pv
 
 ### Setting up the PLCs
 This process is repeated for all 3 PLCs. For simplicity, start with PLC1. 
- 1. Same is for the setup for the HMI. Gather the NodeId string for PLCX by connecting to the OPCUA server with UAExpert for example. 
- 2.   
+ 1.  Gather the NodeId string for PLCX by connecting to the OPCUA server with UAExpert for example.  
+ 2.  Repeat the same process, only this time change the .plcx (e.g.: .plc1) in the PLC folder.
+ 3.  Once you are ready to push the image with the changes. Copy the contents of the .plsx-file, and paste it to the .env files. Save both files.
+ 4.  Then double-click the plsx.bat file corresponding to the plc (e.g.: plc1.bat).
+ 5.  Repeat for plc 1 and plc 2. 
+
 
 ## Installation
+Access the device through an SSH terminal (PuTTY for example). 
+1. Download and install the docker image corresponding to the device. 
+```
+docker pull wagonorge/opcua-mqtt-link-hmi
+```
+```
+docker pull wagonorge/opcua-mqtt-link-plc1
+```
+```
+docker pull wagonorge/opcua-mqtt-link-plc2
+```
+```
+docker pull wagonorge/opcua-mqtt-link-plc3
+```
 
 
 
