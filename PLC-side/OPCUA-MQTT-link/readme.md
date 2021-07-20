@@ -119,4 +119,4 @@ There should not be any errors or tracebacks.
   - Specifically installing cryptography version 3.1.1
 
 ### Main python program and .env setups
-- Removed unnecessary items from the .env file, and changed how NodeId is generated in all "__main__.py" scripts to ease setup and installation. 
+- Removed unnecessary items from the .env file, and changed how NodeId is generated in all "`\__main__.py" scripts to ease setup and installation. 
