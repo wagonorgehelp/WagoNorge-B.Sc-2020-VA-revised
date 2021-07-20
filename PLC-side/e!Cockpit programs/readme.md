@@ -41,6 +41,8 @@ Follow this guide: https://github.com/WAGO/docker-ipk
 
 
 ## Setup in e!Cockpit
+Repeat the process with the corresponding program for all 4 devices. 
+For the HMI it is recommended to use a large TP600 PIO3 panel. It could also run on a PFC200 and the visualization be called through webvisu. 
 
 ### Download and setup
 1. Dowload the e!Cockpit program. 
