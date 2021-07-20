@@ -27,4 +27,4 @@ Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain
 Follow the README.md within both folders
 
 
-# Communication overview
+## Communication overview
