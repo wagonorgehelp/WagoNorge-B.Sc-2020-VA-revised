@@ -63,5 +63,5 @@ Follow this guide: https://github.com/WAGO/docker-ipk
  6. Rebuild the program and make sure that it runs without errors. Connect and download to the device. 
 
 ### Install visualization profile for HMI
-
-
+For the HMI visualization to look correctly the vizualization profile needs to be installed.
+1. Download 
