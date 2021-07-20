@@ -7,16 +7,28 @@
 - An SSH client.
 - Internet connection on the device. 
 - A local OPCUA-cient. Recommeded: UAExpert. 
+- Docker Desktop installed locally on your computer, with the setup complete and docker running. 
+- Git Bash installed locally to access to local Docker Environment
 
-Recommended:
- - Docker Desktop installed locally on your computer.
+Recommended
  - Visual Studio Code or Notepad++ for editing files
 
 ## Setup 
-NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. Moreover, use another MQTT broker or change all used MQTT-topics within the setup-files and and python-scripts
+NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. Moreover, use another MQTT broker and/or change all used MQTT-topics within the setup-files and and python-scripts
 
 This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
-- Download and unpack "OPCUA_MQTT_link.zip"
+- Download and unpack "OPCUA_MQTT_link.zip".
+
+Create a builx builder (required to push images to docker-hub, since the files are too large to be built on the device):
+1. Open Git bash.
+2. Add builder by copy pasting the commands
+```
+docker buildx create --name builder-for-plc
+```
+3. Configure to use it
+```
+docker buildx use builder-for-plc
+```
 
 ### Setting up the client for the HMI-device
 1. Connect to the OPCUA server on the HMI-device using an OPCUA-client (UAExpert is used in this example). 
@@ -48,6 +60,8 @@ MQTT_PUBLISH_PV_SUFFIX=Pv
    - "MQTT_PORT" should contain the port of your desired MQTT broker. 
    - "MQTT_PUBLISH_Pv_SUFFIX" leave unchanged. 
 
+9. Save the .env file. Perhaps copy the contents to the .hmi file as a backup.
+10. Open the "push.bat"-file
 
 ## Installation
 
