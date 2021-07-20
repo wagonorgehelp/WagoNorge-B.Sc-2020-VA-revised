@@ -75,4 +75,4 @@ For the HMI visualization to look correctly the vizualization profile needs to b
 
 ### Image pool in HMI
 - Make sure the image pool "WAGO" is within the application and device strucutre. 
-- If not. do
+- If not, download the "imagepool.export" and import it. 
