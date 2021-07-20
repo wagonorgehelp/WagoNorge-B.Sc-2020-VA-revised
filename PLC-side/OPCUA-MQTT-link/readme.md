@@ -7,6 +7,7 @@
 - An SSH client.
 - Internet connection on the device. 
 - A local OPCUA-cient. Recommeded: UAExpert. 
+- An account on the Docker-hub https://hub.docker.com/
 - Docker Desktop installed locally on your computer, with the setup complete and docker running. 
 - Git Bash installed locally to access to local Docker Environment
 
@@ -62,7 +63,8 @@ MQTT_PUBLISH_PV_SUFFIX=Pv
    - "MQTT_PUBLISH_Pv_SUFFIX" leave unchanged. 
 
 9. Save the .env file. Perhaps copy the contents to the .hmi file as a backup.
-10. Open the "push.bat"-file
+10. Open the "push.bat"-file, make sure that your own and the correct docker-hub repository is selected (before "--push"). Save and close. 
+11. Build and push the docker image, with all the files in this folder, by double-clicking the "push.bat"-file. Verify that it pushed correctly by checking the Docker Hub. 
 
 ## Installation
 
