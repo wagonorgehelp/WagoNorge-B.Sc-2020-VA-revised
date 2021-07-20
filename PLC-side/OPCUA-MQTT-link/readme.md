@@ -14,6 +14,7 @@ Recommended:
 
 ## Setup 
 NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. 
+
 This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
 - Download and unpack "OPCUA_MQTT_link.zip"
 
