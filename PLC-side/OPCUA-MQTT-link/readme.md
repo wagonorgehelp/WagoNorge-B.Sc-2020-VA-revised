@@ -7,4 +7,12 @@
 - An SSH client.
 - Internet connection on the device. 
 
+## Installation
 
+
+
+# Changelog 
+
+## Template dockerfile
+
+## Main python program and .env setups
