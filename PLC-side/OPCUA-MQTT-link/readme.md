@@ -13,7 +13,7 @@ Recommended:
  - Visual Studio Code or Notepad++ for editing files
 
 ## Setup 
-NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. 
+NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. Moreover, use another MQTT broker or change all used MQTT-topics within the setup-files and and python-scripts
 
 This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
 - Download and unpack "OPCUA_MQTT_link.zip"
@@ -24,7 +24,7 @@ This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow m
 3. Within UAExpert, in Address Space, navigate Root -> Objects -> DeviceSet -> TP 600... -> Application -> GlobalVars -> HMI.
 4. Click on any variable marked with a green label. 
 5. Node information should be available in the "Attributes" tab on the right-hand side. 
-6. Doble click on the "Identifier" value within "NodeId". Copy and paste the identifier string to notepad or something like that. It may look something like this: 
+6. Doble click on the "Identifier" value within "NodeId". Copy and paste the identifier string to notepad or something like that. It should look something like this: 
 ```
 |var|TP 600 7.0 800x480 PIO3 CP.Application.HMI.AliveCounterPlc1Pv
 ```
@@ -40,6 +40,14 @@ MQTT_BROKER=broker.hivemq.com
 MQTT_PORT=1883
 MQTT_PUBLISH_PV_SUFFIX=Pv
 ```
+8. Chang it accordingly
+  - "OPC_UA_SERVER" OPC UA client end-point IP is currently set to localhost (172.17.0.1)
+  - "OPC_UA_ID" should contain what every is after "|var|" until the first "." in step 6.
+  - "OPC_UA_APP" should contain what ever is after the first "." until the next. 
+  - "MQTT_BROKER" should contain the URL of your desidered MQTT broker. 
+  - "MQTT_PORT" should contain the port of your desired MQTT broker. 
+  - "MQTT_PUBLISH_Pv_SUFFIX" leave unchanged. 
+
 
 ## Installation
 
