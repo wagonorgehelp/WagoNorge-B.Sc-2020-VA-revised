@@ -1,4 +1,4 @@
-# WagoNorge-B.Sc-VA-demo
+# WagoNorge-B.Sc-2020-VA-demo
 
 ## Info
 This repository contains a revised version of a bachelor written for Wago Norge, the spring of 2020.  
