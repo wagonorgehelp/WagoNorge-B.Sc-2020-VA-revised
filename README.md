@@ -15,6 +15,12 @@ Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain
 - A detailed installation guid
 - A few program fixes that eases the installation
 
+### Program functionalities and contents
+- PLCs and HMI
+    - e!cockpit program that simulates input output and measurements.
+    - A docker container that ports values from the PLCs OPC UA server to an MQTT broker. The container contains a python script that uses the "freeopcua"-library as the OPCUA-client and the "paho-mqtt"-library as the MQTT client.
+- Cloud server:
+    - 
 
 ## Requirements
 - 3x Wago PFC200 PLCs
