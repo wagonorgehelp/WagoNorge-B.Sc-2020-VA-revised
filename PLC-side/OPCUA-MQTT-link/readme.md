@@ -112,6 +112,11 @@ There should not be any errors or tracebacks.
 
 # Changelog 
 
-## Template dockerfile
+## 20.07.2021 
+### Template dockerfile
+- Fixed "cryptography is not defined" by implementing the following actions in the dockerfile. 
+  - updating pip installer to the latest version.
+  - Specifically installing cryptography version 3.1.1
 
-## Main python program and .env setups
+### Main python program and .env setups
+- Removed unnecessary items from the .env file, and changed how NodeId is generated in all "__main__.py" scripts to ease setup and installation. 
