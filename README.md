@@ -28,3 +28,17 @@ Follow the README.md within both folders
 
 
 ## Communication overview
+
+### Network topology
+
+![nettverkstopologi](https://user-images.githubusercontent.com/73703856/126310533-434e2935-3811-43e7-9c68-7a60520869a0.PNG)
+
+### Between PLC and HMI
+![complchmi](https://user-images.githubusercontent.com/73703856/126310704-1504c6b8-5a10-4e38-9215-10343fc181ba.PNG)
+
+### Between PLC and cloud server
+![complccloud](https://user-images.githubusercontent.com/73703856/126310799-a78a4a43-2fe5-411f-b26d-0f1074661bec.PNG)
+
+
+
+
