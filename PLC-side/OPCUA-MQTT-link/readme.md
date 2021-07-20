@@ -18,10 +18,16 @@ NB! For external users: within the .bat executables and all dockerfiles. Please 
 This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
 - Download and unpack "OPCUA_MQTT_link.zip"
 
-### Setting up the client for the HMI
+### Setting up the client for the HMI-device
 1. Connect to the OPCUA server on the HMI-device using an OPCUA-client (UAExpert is used in this example). 
 2. Within the HMI folder, open the .env in an editor. 
-3. 
+3. Within UAExpert, in Address Space, navigate Root -> Objects -> DeviceSet -> TP 600... -> Application -> GlobalVars -> HMI.
+4. Click on any variable marked with a green label. 
+5. Node information should be available in the "Attributes" tab on the right-hand side. 
+6. Doble click on the "Identifier" value within "NodeId". Copy and paste the identifier string to a clipboard. It may look something like this: 
+´´´
+|var|TP 600 7.0 800x480 PIO3 CP.Application.HMI.AliveCounterPlc1Pv
+´´´
 
 ## Installation
 
