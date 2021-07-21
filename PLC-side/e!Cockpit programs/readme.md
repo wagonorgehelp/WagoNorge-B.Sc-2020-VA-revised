@@ -29,7 +29,7 @@ Access the the WBM for the appropiate Wago device, and repeat the process for al
     - Hostname: broker.hivemq.com
     - Portnumber: 1883
     - Client ID (e.g.): WAGOPLC3
-
+ 7. Reboot the PLC
 
 ### Installing CoDeSys OPC UA Server
 Wagos own OPC UA Server does no longer support the setup of multiple node IDs for structures and arrays. Therefore, for the OPCUA-MQTT-link to work properly, the CoDeSys OPC UA server needs to be installed via an IPK. 
