@@ -113,10 +113,10 @@ Download and unzip the "Server Source Code.zip"-file.
 1. In the home menu, choose "Create a data source"
 2. Search for MySQL, choose it and click "select".
 3. Fill in the following:
- - Host: db:3306
- - Database: processvalues
- - User: root
- - Password: example
+	- Host: db:3306
+ 	- Database: processvalues
+ 	- User: root
+ 	- Password: example
 4. Activate "Default"
 5. Click "Save and Test" to save and test the communication. 
 
@@ -133,9 +133,9 @@ Download and unzip the "Server Source Code.zip"-file.
 ## Using Adminer to access theMySQL database
 
 1. Use your browser to connect to [server-ip]:8080
- - Username: root
- - Password: example
- - Database: *leave this blank*
+ 	- Username: root
+ 	- Password: example
+	- Database: *leave this blank*
 
 2. Click log inn
 
@@ -148,9 +148,9 @@ By using the MQTT Websocket Client:
 http://www.hivemq.com/demos/websocket-client/
 
 1. Connect to the broker:
- - Host: broker.hivemq.com
- - Port: 8000
- - Click "connect"
+ 	- Host: broker.hivemq.com
+ 	- Port: 8000
+ 	- Click "connect"
 
 2. Subscribe to subjects:
 
