@@ -1,13 +1,15 @@
-# Sette opp skyserver med google cloud
-Forarbeid:
- - Sette opp google cloud bruker, med betalingsinformasjon
+# The cloud server
+
+## Installation on a Google Cloud server
+Prerequisites:
+ - Set up a google account.
  - "Enable the Compute Engine API"	
 
 https://cloud.google.com/ 
 
 Console -> Go to compute engine
 
-## Initiere skyserveren
+### Initiate the cloud server
  1. VM instances -> Create instance.
  2. Under Boot disk, klikk Change for å konfigurere boot disken. 
  3. Under Public Images:
@@ -20,7 +22,7 @@ Console -> Go to compute engine
  5. Vurder å velge en region i Europa (Nederland f.eks.).
  6. Klikk Create for å lage instansen. 
 
-## Installere Docker i skyserveren
+### Installere Docker i skyserveren
 Ref: https://docs.docker.com/engine/install/ubuntu/
 
 Koble deg til instansen ved å trykke SSH under connect
