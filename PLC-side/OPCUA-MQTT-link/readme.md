@@ -17,8 +17,7 @@ Recommended
 ## Setup 
 NB! For external users: within the .bat executables and all dockerfiles. Please change the push/pull repository docker-hub destination to your own. Moreover, use another MQTT broker and/or change all used MQTT-topics within the setup-files and and python-scripts
 
-This step can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
-- Download and unpack "OPCUA_MQTT_link.zip".
+The setup can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
 
 ### Create a builx builder 
 Required to push images to docker-hub, since the files are too large to be built on the device
