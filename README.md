@@ -21,7 +21,9 @@ Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain
     - A docker container that ports values from the PLCs OPC UA server to an MQTT broker. The container contains a python script that uses the "freeopcua"-library as the OPCUA-client and the "paho-mqtt"-library as the MQTT client.
 - Cloud server:
     - Hosts a visualization in Grafana. 
-
+    - Simulation
+    - Leak Detection
+    - Observes the PLCs
 ## Requirements
 - 3x Wago PFC200 PLCs
 - A Wago TP600 PIO3 touch panel
