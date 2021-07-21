@@ -11,28 +11,30 @@ Console -> Go to compute engine
 
 ### Initiate the cloud server
  1. VM instances -> Create instance.
- 2. Under Boot disk, klikk Change for å konfigurere boot disken. 
- 3. Under Public Images:
+ 2. Bellow "Boot disk", click "Change" to configure the boot disk. 
+ 3. Bellow Public Images:
 	- Operating system: Ubuntu 
 	- Version: Ubuntu 18.04 LTS
-	- Klikk deretter select for å bekrefte. 
- 4. Under Firewall, velg:
+	- Click "select" to confirm
+ 4. Bellow Firewall, choose:
 	- "Allow HTTP traffic" 
 	- "Allow HTTPS traffic" 
- 5. Vurder å velge en region i Europa (Nederland f.eks.).
- 6. Klikk Create for å lage instansen. 
+ 5. Consider choosing a location with a close proximaty for less latancy. 
+ 6. Click Create to create the instance. 
+
+The cloud server should now be set up with Linux Ubuntu as the operating system. 
 
 ### Installere Docker i skyserveren
 Ref: https://docs.docker.com/engine/install/ubuntu/
 
-Koble deg til instansen ved å trykke SSH under connect
+Connect to the instance by clicking SSH under connect. 
 
- 0. Avinstaller eldre versjoner:
+1. Uninstall any older versions: 
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ``` 
 
- 1. Oppdatere "apt"-pakke indeks:
+ 1. Update apt-package indeks:
 ```
 sudo apt-get update
 ```
