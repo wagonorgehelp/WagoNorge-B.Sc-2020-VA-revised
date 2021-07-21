@@ -34,11 +34,11 @@ Connect to the instance by clicking SSH under connect.
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ``` 
 
- 1. Update apt-package indeks:
+ 2. Update apt-package indeks:
 ```
 sudo apt-get update
 ```
- 2. Install packages to allow "apt" to use a repository over HTTPS:
+ 3. Install packages to allow "apt" to use a repository over HTTPS:
 ```
 sudo apt-get install \
 apt-transport-https \
@@ -47,27 +47,27 @@ curl \
 gnupg \
 lsb-release
 ```
- 3. Add Docker's official GPG kkey:
+ 4. Add Docker's official GPG kkey:
 ```
  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
- 4. Use the following command to setup a stable repository: 
+ 5. Use the following command to setup a stable repository: 
 ```
  echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
- 5. Install Docker Engine:
+ 6. Install Docker Engine:
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ``` 
 
-6. Verify the installation by running the following command:
+7. Verify the installation by running the following command:
 ```
 sudo docker version
 ```
 
-## Installing Docker-compose. 
+### Installing Docker-compose. 
 Ref: https://docs.docker.com/compose/install/
 
  1. Download and install the last stable version of docker-compose:
@@ -75,145 +75,93 @@ Ref: https://docs.docker.com/compose/install/
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
- 2. Legge til kjørerettigheter til binary:
+ 2. Add executable permission to the binary:
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
- 3. Verifiser at det er installert riktig ved å kjøre følgende kommando.
+ 3. Verify that the installation was successfull by running this command:
 ```
 sudo docker-compose --version
 ```
 
-# Installere images
- 1. Flytt over docker-compose.yaml filen. 
-   - Kan gjøres i SSH-klienten til Google, ved å trykke på instillinger/hjulet øverst til høyre, så "upload file"
- 2. Kjør:
+### Installing and setting up the server-scripts as Docker containers with docker-compose
+ 1. Download the docker-compose.yaml file. 
+ 	- It is available in this directory, and in the "Server Source Code.zip"-file as well.
+ 2. Upload the docker-compose.yaml file to the cloud server. 
+  	- Can be done in the Google-SSH-client by clicking the settings-wheel and then "upload file"
+ 3. Run the following command:
 ```
 sudo docker-compose up
 ``` 
-Den automatiserer installasjon og oppsett
- 3. Gi den noen minutter på laste ned, installere og start opp. 
-
-"docker-compose.yaml" filen kan inneholde følgende:
-```
-version: "3.1"
-
-services:
-  mqtttomysql:
-    image: jonev/mqtt-mysql-store
-    depends_on:
-      - db
-
-  simulation:
-    image: jonev/water-simulator
-    depends_on:
-      - db
-
-  leakdetection:
-    image: jonev/leak-detection
-    depends_on:
-      - db
-      - simulation
-
-  grafana:
-    image: jonev/grafana-with-plugins
-    ports:
-      - 3000:3000
-    depends_on:
-      - db
-
-  db:
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
-    environment:
-      MYSQL_ROOT_PASSWORD: example
-  adminer:
-    image: adminer
-    ports:
-      - 8080:8080
-    depends_on:
-      - db
-  portainer:
-    image: portainer/portainer
-    command: -H unix:///var/run/Docker.sock
-    restart: always
-    ports:
-      - 9000:9000
-      - 8000:8000
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-volumes:
-  portainer_data:
-
-```
-
-# Sette opp Grafana HMI
-
-Grafana er tilgjengelig på: [ip-adresse]:3000
-
-### Forarbeid
-Last ned og unzip kildekode zipfilen. Den er tilgjengelig på linken under
-
-https://github.com/Wago-Norge/Bachelorprosjekt-2020/blob/master/Dokumentasjon%20og%20Kildekode/Open%20Source%20kode_v1.0.0.zip
+Docker-compose automizes the installation and setup of the containers. 
+ 4. Give it a couple of minutes to download, install and setup.  
 
 
-### Logg inn:
- - Brukernavn: admin
+
+## Setting up the Grafana HMI
+
+Grafana is available on: [server-ip]:3000
+
+### Prerequisites
+Download and unzip the "Server Source Code.zip"-file. 
+
+### Log in:
+ - Username: admin
  - Passord: admin
 
-### Velge database
-1. På Hjem/home menyen, velg "Create a data source"
-2. Søk etter MySQL, velg den og trykk "select".
-3. Fyll inn følgende:
+### Choose database
+1. In the home menu, choose "Create a data source"
+2. Search for MySQL, choose it and click "select".
+3. Fill in the following:
  - Host: db:3306
  - Database: processvalues
  - User: root
  - Password: example
-4. Aktiver "Default"
-5. Trykk så "Save and Test" for å lagre og sjekke kommunikasjonen. 
+4. Activate "Default"
+5. Click "Save and Test" to save and test the communication. 
 
 
-### Legge til ferdig dashboard
-1. Trykk på "+"-symbolet (create) og velg import. 
-2. Trykk så "Upload .json file".
-3. Velg "grafanadahsboard.json". Den finner du i "Open Source kode"-mappen du lastet ned: drinking-water-distri... -> LeakDetection
-4. Trykk så import. 
-5. Trykk så "Save dashboard" øverst i høyre hjørne, også "save" for å lagre dashbordet. 
-
-
+### Add the dashboard
+1. Click the "+"-symbole (create) and choose "import". 
+2. Click "Upload .json file".
+3. Choose the "grafanadahsboard.json"-file. You will find it in Server Source Code -> LeakDetection
+4. Click import. 
+5. Click "Save dashboard" in the upper right corner and then "save" to save the dashbordet. 
 
 
 
-# Bruke Adminer til å få tilgang til MySQL databasen
+## Using Adminer to access theMySQL database
 
-1. Bruk en nettleser til å koble til [ip-adresse]:8080
- - Brukernavn: root
- - Passord: example
- - Database: *ikke skriv noe her*
+1. Use your browser to connect to [server-ip]:8080
+ - Username: root
+ - Password: example
+ - Database: *leave this blank*
 
-2. Klikk Logg inn
+2. Click log inn
 
-# Monitorere HiveMQ MQTT-brokeren
+Here you can brows the MySQL database, change things and read values. 
 
-Ved å benytte MQTT Websocket Client:
+## Monitoring the HiveMQ MQTT-broker
+
+By using the MQTT Websocket Client:
 
 http://www.hivemq.com/demos/websocket-client/
 
-1. Koble deg til brokeren:
+1. Connect to the broker:
  - Host: broker.hivemq.com
  - Port: 8000
- - Trykk "connect"
+ - Click "connect"
 
-2. Abonner på emner:
-
-Emner man kan abonnere på:
+2. Subscribe to subjects:
 
 
+From the PLCs:
+```
        ba/wago/opcua/plc1/plcsub
        ba/wago/opcua/plc2/plcsub
        ba/wago/opcua/plc3/plcsub
        ba/wago/opcua/plc1/plcpub
        ba/wago/opcua/plc2/plcpub
        ba/wago/opcua/plc3/plcpub
-
+```
 
