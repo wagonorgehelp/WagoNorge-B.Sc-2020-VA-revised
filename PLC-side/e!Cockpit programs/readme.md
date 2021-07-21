@@ -23,6 +23,12 @@ Access the the WBM for the appropiate Wago device, and repeat the process for al
  5. ... -> PLC Runtime Services
     - CODESYS 2: enable webserver and communication. 
     - e!RUNTIME: enable webserver. 
+ 6. Setup MQTT cloud connection. Cloud Connectivity -> Connection 1
+    - Enabled: checked
+    - Cloud Platform: MQTT AnyCloud
+    - Hostname: broker.hivemq.com
+    - Portnumber: 1883
+    - Client ID (e.g.): WAGOPLC3
 
 
 ### Installing CoDeSys OPC UA Server
