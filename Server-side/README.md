@@ -154,16 +154,26 @@ http://www.hivemq.com/demos/websocket-client/
  	- Port: 8000
  	- Click "connect"
 
-2. Subscribe to subjects:
+2. Subscribe to subjects
 
 
 From the PLCs:
 ```
-       ba/wago/opcua/plc1/plcsub
-       ba/wago/opcua/plc2/plcsub
-       ba/wago/opcua/plc3/plcsub
-       ba/wago/opcua/plc1/plcpub
-       ba/wago/opcua/plc2/plcpub
-       ba/wago/opcua/plc3/plcpub
+ba/wago/opcua/plc1/plcsub
+ba/wago/opcua/plc2/plcsub
+ba/wago/opcua/plc3/plcsub
+ba/wago/opcua/plc1/plcpub
+ba/wago/opcua/plc2/plcpub
+ba/wago/opcua/plc3/plcpub
+```
+Simulation program information:
+
+```
+ba/wago/sim/info 
 ```
 
+Weather from python to HMI:
+
+```
+ba/wago/sim/hmi/hmisub 
+```
