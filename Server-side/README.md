@@ -24,7 +24,7 @@ Console -> Go to compute engine
 
 The cloud server should now be set up with Linux Ubuntu as the operating system. 
 
-### Installere Docker i skyserveren
+### Installing Docker on an Ubuntu machine
 Ref: https://docs.docker.com/engine/install/ubuntu/
 
 Connect to the instance by clicking SSH under connect. 
@@ -38,7 +38,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 sudo apt-get update
 ```
- 2. Installere pakker for at apt kan bruke repository over HTTPS (Ved melding: skriv "Y" og trykke enter, ignorer evt. error):
+ 2. Install packages to allow "apt" to use a repository over HTTPS:
 ```
 sudo apt-get install \
 apt-transport-https \
@@ -47,30 +47,30 @@ curl \
 gnupg \
 lsb-release
 ```
- 3. Legge til Dockers offisielle GPG nøkkel:
+ 3. Add Docker's official GPG kkey:
 ```
  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
- 4. Bruk følgende kommando for å sette opp stable repository: 
+ 4. Use the following command to setup a stable repository: 
 ```
  echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
- 5. Installere Docker Engine:
+ 5. Install Docker Engine:
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ``` 
 
-6. Verifiser at det er installert riktig, ved å kjøre:
+6. Verify the installation by running the following command:
 ```
 sudo docker version
 ```
 
-## Installere Docker-compose. 
+## Installing Docker-compose. 
 Ref: https://docs.docker.com/compose/install/
 
- 1. Laste ned siste stabile versjon av docker-compose:
+ 1. Download and install the last stable version of docker-compose:
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
