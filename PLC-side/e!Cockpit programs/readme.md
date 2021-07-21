@@ -32,7 +32,7 @@ Access the the WBM for the appropiate Wago device, and repeat the process for al
  7. Reboot the PLC
 
 ### Installing CoDeSys OPC UA Server
-Wagos own OPC UA Server does no longer support the setup of multiple node IDs for structures and arrays. Therefore, for the OPCUA-MQTT-link to work properly, the CoDeSys OPC UA server needs to be installed via an IPK. 
+Wagos own OPC UA Server does no longer support the setup of multiple node IDs for structures and arrays. Therefore, for the OPCUA-MQTT-link to work, the CoDeSys OPC UA server needs to be installed via an IPK. 
 
 1. Download the IPK: https://wago.sharefile.eu/share/view/s311dc640445b497cb356dbc9fb4b20b5
 2. Unpack/unzip it.
