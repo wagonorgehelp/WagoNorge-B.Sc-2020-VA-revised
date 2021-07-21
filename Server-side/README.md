@@ -97,6 +97,8 @@ Docker-compose automizes the installation and setup of the containers.
  4. Give it a couple of minutes to download, install and setup.  
 
 
+## Installing it on a Wago-computer
+
 
 ## Setting up the Grafana HMI
 
