@@ -9,7 +9,7 @@
 - A local OPCUA-client. Recommeded: UAExpert. 
 - An account on the Docker-hub https://hub.docker.com/
 - Docker Desktop installed locally on your computer, with the setup complete and docker running. 
-- Git Bash installed locally to access to local Docker Environment
+- Git Bash (or something similar) installed locally to access the local Docker Environment on your computer
 
 Recommended
  - Visual Studio Code or Notepad++ for editing files
