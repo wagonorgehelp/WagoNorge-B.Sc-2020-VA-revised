@@ -12,7 +12,7 @@ Credits to the original authors:
 Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain aspects are obsolete, missing installation steps and fixes are presented in this repository)
 
 ### Contents
-- A detailed installation guid
+- A detailed installation guide
 - Fixed incompatibility issues. Running fine 07.2021
 - A few program adjustments that eases the installation
 
