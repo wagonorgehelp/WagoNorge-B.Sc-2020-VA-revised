@@ -13,7 +13,7 @@ Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain
 
 ### Contents
 - A detailed installation guid
-- Fixed incompatibilities. Running fine 07.2021
+- Fixed incompatibility issues. Running fine 07.2021
 - A few program adjustments that eases the installation
 
 ### Program functionalities and contents
