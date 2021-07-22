@@ -94,7 +94,7 @@ docker pull wagonorge/opcua-mqtt-link-plc2
 ```
 docker pull wagonorge/opcua-mqtt-link-plc3
 ```
-2. Pulling the repository may take some time. Once it is done, initiate the containe by running the corresponding command.
+2. Pulling the repository may take some time. Once it is done, initiate the container by running the corresponding command.
 ```
 docker run -d --restart always -p 9999:9999 --name client wagonorge/opcua-mqtt-link-hmi
 ```
@@ -107,7 +107,7 @@ docker run -d --restart always -p 9999:9999 --name client wagonorge/opcua-mqtt-l
 ```
 docker run -d --restart always -p 9999:9999 --name client wagonorge/opcua-mqtt-link-plc3
 ```
-3. Verirfy that the container runs correctly by initiating a log.
+3. Verirfy that the container runs correctly by checking the log.
 ```
 docker attach client
 ```
