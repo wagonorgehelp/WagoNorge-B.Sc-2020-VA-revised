@@ -84,3 +84,9 @@ For the HMI visualization to look correctly the vizualization profile needs to b
 ### Image pool in HMI
 - Make sure the image pool "WAGO" is within the application and device-structure. 
 - If not, download the "imagepool.export" and import it. 
+
+### Linking Grafana to HMI-visualization
+
+Once the cloud server is initiated and Grafana is set up. 
+
+With the HMI e!c application, access "POU". Change the "Grafana" string to the URL of the Grafana-visualization in the cloud-server
