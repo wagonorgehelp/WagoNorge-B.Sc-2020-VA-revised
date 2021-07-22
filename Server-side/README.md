@@ -138,7 +138,7 @@ Download and unzip the "Server Source Code.zip"-file.
 
 2. Click log inn
 
-Here you can brows the MySQL database, change things and read values. 
+Here you can browse the MySQL database, change things and read values. 
 
 ## Monitoring the HiveMQ MQTT-broker
 
