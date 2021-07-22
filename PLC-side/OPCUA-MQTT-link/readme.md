@@ -24,7 +24,7 @@ All used OPCUA-MQTT-Client images are built from "ImageTemplate". To change Pyth
 
 
 ### Create a builx builder 
-Required to push images to docker-hub, since the files are too large to be built on the device
+Required to build and push images to docker-hub, since the files are too large to be built on the device. 
 1. Open Git bash.
 2. Add builder by copy pasting the commands
 ```
