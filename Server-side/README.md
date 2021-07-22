@@ -153,8 +153,7 @@ http://www.hivemq.com/demos/websocket-client/
 
 2. Subscribe to subjects
 
-
-From the PLCs:
+Via OPCUA-MQTT-link:
 ```
 ba/wago/opcua/plc1/plcsub
 ba/wago/opcua/plc2/plcsub
@@ -163,14 +162,19 @@ ba/wago/opcua/plc1/plcpub
 ba/wago/opcua/plc2/plcpub
 ba/wago/opcua/plc3/plcpub
 ```
-Simulation program information:
 
 ```
 ba/wago/sim/info 
 ```
-
-Weather from python to HMI:
-
 ```
 ba/wago/sim/hmi/hmisub 
+```
+Subjects that goes through e!cockpit:
+```
+ba/wago/sim/plc1/plcpub 
+ba/wago/sim/plc1/plcsub 
+ba/wago/sim/plc2/plcpub
+ba/wago/sim/plc2/plcsub
+ba/wago/sim/plc3/plcpub 
+ba/wago/sim/plc3/plcsub 
 ```
