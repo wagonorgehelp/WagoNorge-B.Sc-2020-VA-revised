@@ -33,8 +33,7 @@ Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain
 
 ## Installation
 
-Follow the README.md within both folders
-
+Follow the README.md within "PLS-side" for PLC installations, and "Server-side" for server installations
 
 ## Communication overview
 
