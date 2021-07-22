@@ -134,7 +134,7 @@ Download and unzip the "Server Source Code.zip"-file.
 1. Use your browser to connect to [server-ip]:8080
  	- Username: root
  	- Password: example
-	- Database: *leave this blank*
+	- Database (e.g.): processvalues 
 
 2. Click log inn
 
