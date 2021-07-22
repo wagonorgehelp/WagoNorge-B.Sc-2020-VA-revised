@@ -35,7 +35,7 @@ docker buildx create --name builder-for-plc
 docker buildx use builder-for-plc
 ```
 
-### Setting up the client for the HMI-device
+### HMI-device setup
 1. Connect to the OPCUA server on the HMI-device using an OPCUA-client (UAExpert is used in this example). 
 2. Within the HMI folder, open the .env in an editor. 
 3. Within UAExpert, in Address Space, navigate Root -> Objects -> DeviceSet -> TP 600... -> Application -> GlobalVars -> HMI.
@@ -69,7 +69,7 @@ MQTT_PUBLISH_PV_SUFFIX=Pv
 10. Open the "push.bat"-file, make sure that your own and the correct docker-hub repository is selected (before "--push"). Save and close. 
 11. Build and push the docker image, with all the files in this folder, by double-clicking the "push.bat"-file. Verify that it pushed correctly by checking the Docker Hub. 
 
-### Setting up the PLCs
+### PLC Setup
 This process is repeated for all 3 PLCs. For simplicity, start with PLC1. 
  1.  Gather the NodeId string for PLCX by connecting to the OPCUA server with UAExpert for example.  
  2.  Repeat the same process, only this time change the .plcx (e.g.: .plc1) in the PLC folder.
