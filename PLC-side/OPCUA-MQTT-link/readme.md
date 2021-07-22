@@ -75,7 +75,7 @@ This process is repeated for all 3 PLCs. For simplicity, start with PLC1.
  2.  Repeat the same process, only this time change the .plcx (e.g.: .plc1) in the PLC folder.
  3.  Once you are ready to push the image with the changes. Copy the contents of the .plsx-file, and paste it to the .env files. Save both files.
  4.  Then double-click the plsx.bat file corresponding to the plc (e.g.: plc1.bat).
- 5.  Repeat for plc 1 and plc 2. 
+ 5.  Repeat for plc 2 and plc 3. 
 
 
 ## Installation
