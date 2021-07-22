@@ -19,6 +19,10 @@ NB! For external users: within the .bat executables and all dockerfiles. Please 
 
 The setup can be squashed if the .env's, .hmi, .plc1, .plc2, and .plc3 somehow matches your setup. 
 
+### Notice
+All used OPCUA-MQTT-Client images are built from "ImageTemplate". To change Python versions or libraries in the containers, modify the Dockerfile within "ImageTemplate" and then build and push it using the "push.bat" from the same folder. Then push the other images for changes to take effect. 
+
+
 ### Create a builx builder 
 Required to push images to docker-hub, since the files are too large to be built on the device
 1. Open Git bash.
