@@ -129,7 +129,7 @@ Download and unzip the "Server Source Code.zip"-file.
 
 
 
-## Using Adminer to access theMySQL database
+## Using Adminer to access the MySQL database
 
 1. Use your browser to connect to [server-ip]:8080
  	- Username: root
