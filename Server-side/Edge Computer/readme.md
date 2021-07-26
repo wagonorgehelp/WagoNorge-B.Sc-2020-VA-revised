@@ -53,7 +53,7 @@ docker pull eclipse-mosquito
 ```
 2. Initiate the container
 ``` 
-docker run -d --restart always -p 1883:1883 -p 9001:900 --name mqtt eclipse-mosquitto
+docker run -d --restart always -p 1883:1883 -p 9001:9001 --name mqtt eclipse-mosquitto
 ```
 
 ### Setup
