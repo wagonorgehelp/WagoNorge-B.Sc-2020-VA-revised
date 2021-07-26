@@ -1,12 +1,25 @@
 
-# COMMING SOON
+# Using an Edge-computer as the cloud server and MQTT-broker
 
-## Changes server-side mqtt-clients
+## Prerequisites
+ - Docker installed on the Edge-computer
+ - Docker-compose installed on the edge computer
 
-DataStore -> mqtt_to_mysql.py
+## Setting up the docker containers
+As we are going to use a different MQTT-broker, it is important to change the MQTT addressing for all MQTT-clients.
 
-SimulationProgram -> mqtt_client.py
+### Setup for the cloud-server MQTT-clients
 
+Open up the following Python scripts and reffer to the following lines. 
+- DataStore -> mqtt_to_mysql.py (line 16)
+- SimulationProgram -> \__main__.py (
+
+Make sure that "mqttBroker" is set to the IP-address of the Edge-computer. 
+
+e.g.
+```
+mqttBroker = "192.168.10.150"
+``` 
 
 ## Installing the Docker-container
 
