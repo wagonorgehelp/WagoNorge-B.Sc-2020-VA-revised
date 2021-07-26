@@ -11,8 +11,8 @@ As we are going to use a different MQTT-broker, it is important to change the MQ
 ### Setup for the cloud-server MQTT-clients
 
 Open up the following Python scripts and reffer to the following lines. 
-- DataStore -> mqtt_to_mysql.py (line 16)
-- SimulationProgram -> \__main__.py (
+ - DataStore -> mqtt_to_mysql.py (line 16)
+ - SimulationProgram -> \__main__.py (line 23)
 
 Make sure that "mqttBroker" is set to the IP-address of the Edge-computer. 
 
