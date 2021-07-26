@@ -1,11 +1,13 @@
 # OPCUA-MQTT-link setup and installation
 
 ## Prerequisites
+Covered in the e!cockpit readme:
 - All devices has the corresponding e!Cockpit program installed and running. 
 - All devices has the CoDeSys OPC UA server installed. 
 - All devices has Docker installed. 
-- An SSH client.
 - Internet connection on the device. 
+else:
+- An SSH client.
 - A local OPCUA-client. Recommeded: UAExpert. 
 - An account on the Docker-hub https://hub.docker.com/
 - Docker Desktop installed locally on your computer, with the setup complete and docker running. 
