@@ -2,7 +2,7 @@
 
 ## Installation on an Edge Computer
 
-Covered in the edge computer folder
+Covered in the "Edge Computer"-folder
 
 ## Installation on a Google Cloud server
 Prerequisites:
