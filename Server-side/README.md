@@ -1,5 +1,9 @@
 # The cloud server
 
+## Installation on an Edge Computer
+
+Covered in the edge computer folder
+
 ## Installation on a Google Cloud server
 Prerequisites:
  - Set up a google account.
