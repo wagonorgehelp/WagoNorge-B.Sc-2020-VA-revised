@@ -6,6 +6,7 @@ Covered in the e!cockpit readme:
 - All devices has the CoDeSys OPC UA server installed. 
 - All devices has Docker installed. 
 - Internet connection on the device. 
+
 else:
 - An SSH client.
 - A local OPCUA-client. Recommeded: UAExpert. 
