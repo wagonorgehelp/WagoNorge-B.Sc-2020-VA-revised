@@ -1,15 +1,57 @@
 
 # COMMING SOON
 
-## MQTT Broker
-
-https://hub.docker.com/_/eclipse-mosquitto
-
 ## Changes server-side mqtt-clients
 
 DataStore -> mqtt_to_mysql.py
 
 SimulationProgram -> mqtt_client.py
+
+
+## Installing the Docker-container
+
+## Setting up the MQTT Broker
+
+https://hub.docker.com/_/eclipse-mosquitto
+
+Eclipse Mosquitto provides an MQTT-broker that can run on the device as a Docker Container. Installation is included with the docker-compose file. 
+As of Mosquitto MQTT version > 2.0.0, it defaults to "local mode", meaning that the server is only available locally on the machine. To enable external communication, we have to include a port listener to the broker in the configuration file. 
+
+Note: make sure that the Docker-container is running: 
+```
+docker ps -a
+```
+
+1. Access the container
+```
+docker exec -ti mqtt /bin/sh
+```
+2. Open the mosquitto.conf-file
+```
+vi /mosquitto/config/mosquitto.conf
+``` 
+3. Press "i" to enter edit-mode. Then add the following to the config file
+``` 
+persistence true
+allow_anonymous true
+listener 1883
+``` 
+4. Press "ESC" to exit enter mode.
+5. Then type ":wq" to write(save) and quit.
+6. Type the command "return" to exit the container. 
+7. Restart the container.
+```
+docker restart mqtt
+```
+8. Clients should now be able to connect. Verify by checking the container log
+```
+docker attach mqtt
+```
+or
+```
+docker logs mqtt -f
+```
+(ctrl + c to stop viewing the log)
 
 ## Changes PLC-side mqtt-client
 
