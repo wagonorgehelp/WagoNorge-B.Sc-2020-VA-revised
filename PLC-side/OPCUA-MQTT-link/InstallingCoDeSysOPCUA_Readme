@@ -1,7 +1,0 @@
-# Installing CoDeSys OPC UA on a Wago Device from IPK
-NB! Only for firmware 18. 
-
-1. Download and unzip the following zipfile. 
-https://wago.sharefile.eu/d-s311dc640445b497cb356dbc9fb4b20b5
-2. Access the device' Web Based Management. 
-3. Upload
