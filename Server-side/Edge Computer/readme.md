@@ -42,7 +42,7 @@ Push the images to the docker-hub. Pull and run them the same way as covered in 
 https://hub.docker.com/_/eclipse-mosquitto
 
 Eclipse Mosquitto provides an MQTT-broker that can run on the device as a Docker Container. Installation is included with the docker-compose file. 
-As of Mosquitto MQTT version > 2.0.0, it defaults to "local mode", meaning that the server is only available locally on the machine. To enable external communication, we have to include a port listener to the broker in the configuration file. 
+As of Mosquitto MQTT version > 2.0.0, it defaults to "local only mode", it is a security feature that ensures that the MQTT-broker only operates locally if nothing else is specified. To enable external communication, we have to include a port listener to the broker in the configuration file. 
 
 Note: make sure that the Docker-container is running: 
 ```
@@ -81,8 +81,3 @@ docker logs mqtt -f
 ```
 (ctrl + c to stop viewing the log)
 
-## Changes PLC-side mqtt-client
-
-Change the .env's in OPCUA-MQTT-link for HMI and PLCs
-
-Change the cloud connectivity settings in all devices. 
