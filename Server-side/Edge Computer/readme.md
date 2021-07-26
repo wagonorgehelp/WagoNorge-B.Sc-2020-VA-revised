@@ -5,7 +5,7 @@
  - Docker installed on the Edge-computer
  - Docker-compose installed on the edge computer
 
-## Setting up the docker containers
+## Setting up the devices for the new MQTT-broker
 As we are going to use a different MQTT-broker, it is important to change the MQTT addressing for all MQTT-clients.
 
 ### Setup for the cloud-server MQTT-clients
@@ -21,8 +21,22 @@ e.g.
 mqttBroker = "192.168.10.150"
 ``` 
 
-## Installing the Docker-container
+Push the new changes to the docker-hub by using the push.bat (make sure that docker is running with a builx builder running as well. How to do this is covered in the PLS-side setup readme). Make sure that your own docker-repository is set up within the push.bat files. 
 
+Use the docker-compose functionality (as used for the Google-cloud installating) to install the changed docker containers. 
+
+### WBM setup for all devices
+Make sure that within the Web Based Management for HMI, PLC1, PLC2 and PLC3 that the Hostname for the MQTT cloud connection is set to the IP of the edge-computer and not "broker.hivemq.com".
+
+### Setup for the PLCs MQTT-clients
+Within the .env for all 4 devices' "OPCUA_MQTT_link" container, make sure that "MQTT_BROKER" is set to the IP-address of the edge-computer.
+
+e.g.:
+```
+MQTT_BROKER=192.168.10.150
+```
+
+Push the images to the docker-hub. Pull and run them the same way as covered in PLS-side setup readme. 
 ## Setting up the MQTT Broker
 
 https://hub.docker.com/_/eclipse-mosquitto
@@ -46,6 +60,7 @@ vi /mosquitto/config/mosquitto.conf
 3. Press "i" to enter edit-mode. Then add the following to the config file
 ``` 
 persistence true
+persistence_location /mosquitto/data/
 allow_anonymous true
 listener 1883
 ``` 
