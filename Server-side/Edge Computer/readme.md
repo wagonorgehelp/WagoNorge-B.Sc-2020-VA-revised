@@ -65,7 +65,7 @@ docker logs mqtt -f
 ```
 (ctrl + c to stop viewing the log)
 
-## Setting up the devices for the new MQTT-broker
+## Setting up the MQTT-clients for the new MQTT-broker
 As we are going to use a different MQTT-broker, it is important to change the MQTT addressing for all MQTT-clients.
 
 ### Setup for the cloud-server MQTT-clients
