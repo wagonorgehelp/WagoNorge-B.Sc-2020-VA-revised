@@ -116,6 +116,7 @@ docker attach client
 ```
 There should not be any errors or tracebacks. 
 
+
 # Changelog 
 
 ## 20.07.2021 
@@ -126,3 +127,4 @@ There should not be any errors or tracebacks.
 
 ### Main python program and .env setups
 - Removed unnecessary items from the .env file, and changed how NodeId is generated in all "`\__main__.py" scripts to ease setup and installation. 
+
