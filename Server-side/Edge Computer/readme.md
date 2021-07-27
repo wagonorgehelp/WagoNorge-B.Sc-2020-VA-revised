@@ -1,8 +1,11 @@
 
 # Using an Edge-computer as the cloud server and MQTT-broker
+Instead of hosting the cloud-server externally on a 3rd-party server, it could also run locally like for instance on an Edge-Computer.
+
+
 
 ## Tips
- - Instead of using an SSH-client like PuTTY, there is a terminal available on: [ip-address of the devide]:9090
+ - Instead of using an SSH-client like PuTTY, there is a terminal available on: [ip-address of the edge-computer]:9090
 
 ## Prerequisites
  - Docker installed on the Edge-computer
