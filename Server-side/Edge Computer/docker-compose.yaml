@@ -3,22 +3,26 @@ version: "3.1"
 services:
   mqtttomysql:
     image: wagonorge/vaex-mqtt-mysql-store
+    restart: always
     depends_on:
       - db
 
   simulation:
     image: wagonorge/vaex-water-simulator
+    restart: always
     depends_on:
       - db
 
   leakdetection:
     image: wagonorge/va-leak-detection
+    restart: always
     depends_on:
       - db
       - simulation
 
   grafana:
     image: jonev/grafana-with-plugins
+    restart: always
     ports:
       - 3000:3000
     depends_on:
