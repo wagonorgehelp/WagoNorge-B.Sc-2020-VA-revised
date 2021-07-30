@@ -11,6 +11,10 @@ Instead of hosting the cloud-server externally on a 3rd-party server, it could a
  - Docker installed on the Edge-computer
  - Docker-compose installed on the edge computer
 
+## Installing the Docker containers
+1. Make sure that the servers MQTT-clients refers to the IP-adress of the edge-computer build and push the changes.
+ - 
+
 ## Setting up the MQTT Broker
 
 https://hub.docker.com/_/eclipse-mosquitto
@@ -18,9 +22,12 @@ https://hub.docker.com/_/eclipse-mosquitto
 Eclipse Mosquitto provides an MQTT-broker that can run on the device as a Docker Container. Installation is included with the docker-compose file. 
 As of Mosquitto MQTT version > 2.0.0, it defaults to "local only mode", it is a security feature that ensures that the MQTT-broker only operates locally if nothing else is specified. To enable external communication, we have to include a port listener to the broker in the configuration file. 
 
-### Installation
+### Installation using docker-compose
 Either transfer the "docker-compose.yaml"-file from this directory to the edge-computerl, using a FTP-capable service like FileZilla, or pull the "eclipse-mosquito" image manually from the Docker-hub using the following commands.
 
+
+
+### Installation without docker-compose
 1. Pulling the image from the docker-hub. 
 ```
 docker pull eclipse-mosquito 
