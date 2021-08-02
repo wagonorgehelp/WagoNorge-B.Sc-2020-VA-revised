@@ -47,6 +47,7 @@ Follow the README.md within "PLS-side" for PLC installations, and "Server-side" 
 ### Between PLC and cloud server
 ![complccloud](https://user-images.githubusercontent.com/73703856/126310799-a78a4a43-2fe5-411f-b26d-0f1074661bec.PNG)
 
-
+### Network topology (locally configured with edge computer)
+![Nettverkstopologi](https://user-images.githubusercontent.com/61655489/127852940-8ea0943c-2112-4dc3-886e-c81af2653c64.png)
 
 
