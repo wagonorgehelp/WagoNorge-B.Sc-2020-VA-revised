@@ -91,5 +91,5 @@ Once the cloud server is initiated and Grafana is set up.
 
 With the HMI e!c application, access "POU". Change the "Grafana" string to the URL of the Grafana-visualization in the cloud-server.
 
-This function has not been tested as of 07.2021, as it does not work with webvisu, but is said to work on the TP600 panel
+The Grafana can then be accessed in the HMI by navigating Distrubution & Leak Overview, and then clicking the arrow on the top bar. 
 
