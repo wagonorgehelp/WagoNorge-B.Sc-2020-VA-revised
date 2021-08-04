@@ -18,8 +18,8 @@ Instead of hosting the cloud-server externally on a 3rd-party server, it could a
 ### Installing Docker Compose
 
 ## Installing the Docker containers
-1. Make sure that the servers MQTT-clients refers to the IP-adress of the edge-computer build and push the changes.
- - 
+- Make sure that the servers MQTT-clients refers to the IP-adress of the edge-computer build and push the changes.
+
 
 ## Setting up the MQTT Broker
 
