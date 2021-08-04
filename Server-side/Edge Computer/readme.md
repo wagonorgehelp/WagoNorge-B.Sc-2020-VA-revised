@@ -8,8 +8,14 @@ Instead of hosting the cloud-server externally on a 3rd-party server, it could a
  - Instead of using an SSH-client like PuTTY, there is a terminal available on: [ip-address of the edge-computer]:9090
 
 ## Prerequisites
- - Docker installed on the Edge-computer
- - Docker-compose installed on the edge computer
+ - a Wago Edge-Computer
+ - An internet connection
+
+## Installing Docker and Docker Compose
+
+### Installing Docker
+
+### Installing Docker Compose
 
 ## Installing the Docker containers
 1. Make sure that the servers MQTT-clients refers to the IP-adress of the edge-computer build and push the changes.
