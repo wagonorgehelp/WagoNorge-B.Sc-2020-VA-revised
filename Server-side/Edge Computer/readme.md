@@ -76,7 +76,7 @@ persistence_location /mosquitto/data/
 allow_anonymous true
 listener 1883
 ``` 
-4. Press "ESC" to exit enter mode.
+4. Press "ESC" to exit edit mode.
 5. Then type ":wq" to write(save) and quit.
 6. Type the command "return" to exit the container. 
 7. Restart the container.
