@@ -41,7 +41,7 @@ Eclipse Mosquitto provides an MQTT-broker that can run on the device as a Docker
 As of Mosquitto MQTT version > 2.0.0, it defaults to "local only mode", it is a security feature that ensures that the MQTT-broker only operates locally if nothing else is specified. To enable external communication, we have to include a port listener to the broker in the configuration file. 
 
 ### Installation using docker-compose
-Either transfer the "docker-compose.yaml"-file from this directory to the edge-computerl, using a FTP-capable service like FileZilla, or pull the "eclipse-mosquito" image manually from the Docker-hub using the following commands.
+Either transfer the "docker-compose.yaml"-file from this directory to the edge-computerl, using a FTP-capable service like FileZilla, or pull the "eclipse-mosquito" image manually from the Docker-hub using regular Docker commands.
 
 
 
