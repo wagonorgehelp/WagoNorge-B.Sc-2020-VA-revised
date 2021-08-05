@@ -15,11 +15,11 @@ Instead of hosting the cloud-server externally on a 3rd-party server, it could a
 
 ### Installing Docker
 
-Follow this guide: https://docs.docker.com/engine/install/debian/
+Follow this guide [here](https://docs.docker.com/engine/install/debian/)
 
 ### Installing Docker Compose
 
-Follow this guide:  https://docs.docker.com/compose/install/
+Follow this guide [here](https://docs.docker.com/compose/install/)
 
 ## Installing the Docker containers
 - Make sure that the servers MQTT-clients refers to the IP-adress of the edge-computer build and push the changes.
@@ -35,7 +35,7 @@ docker-compose up
 
 ## Setting up the MQTT Broker
 
-https://hub.docker.com/_/eclipse-mosquitto
+[Links to docker hub repository](https://hub.docker.com/_/eclipse-mosquitto)
 
 Eclipse Mosquitto provides an MQTT-broker that can run on the device as a Docker Container. Installation is included with the docker-compose file. 
 As of Mosquitto MQTT version > 2.0.0, it defaults to "local only mode", it is a security feature that ensures that the MQTT-broker only operates locally if nothing else is specified. To enable external communication, we have to include a port listener to the broker in the configuration file. 
