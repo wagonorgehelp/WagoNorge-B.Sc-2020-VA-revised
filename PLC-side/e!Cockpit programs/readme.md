@@ -82,7 +82,7 @@ For the HMI visualization to look correctly the vizualization profile needs to b
 
 
 ### Image pool in HMI
-- Make sure the image pool "WAGO" is within the application and device-structure. 
+- Make sure the image pool "WAGO" is within the application and device-structure of the HMI. 
 - If not, download the "imagepool.export" and import it. 
 
 ### Linking Grafana to HMI-visualization
