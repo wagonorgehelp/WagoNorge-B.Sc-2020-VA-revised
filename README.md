@@ -13,7 +13,8 @@ Credits to the original authors:
 
 ![VA-systemExplenation](https://user-images.githubusercontent.com/61655489/128310474-869abdb6-823f-4f6d-846c-a04802752f17.PNG)
 
-
+- Uses [freeopcua python library](https://github.com/FreeOpcUa/python-opcua) as the OPC UA-client. 
+- Uses [eclipse paho mqtt](https://github.com/eclipse/paho.mqtt.python) as the MQTT-client
 
 
 ### Contents
@@ -24,7 +25,7 @@ Credits to the original authors:
 ### Program functionalities and contents
 - PLCs and HMI
     - e!cockpit program that simulates input output and measurements.
-    - A docker container that ports values from the PLCs OPC UA server to an MQTT broker. The container contains a python script that uses the "freeopcua"-library as the OPCUA-client and the "paho-mqtt"-library as the MQTT client.
+    - A docker container that ports values from the PLCs OPC UA server to an MQTT broker. The container contains a python script that uses the [freeopcua python library](https://github.com/FreeOpcUa/python-opcua) as the OPCUA-client and the [eclipse paho mqtt library](https://github.com/eclipse/paho.mqtt.python) as the MQTT client.
 - Cloud server:
     - Hosts a Grafana visualization. 
     - Simulation
