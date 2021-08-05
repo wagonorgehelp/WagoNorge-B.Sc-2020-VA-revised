@@ -15,7 +15,7 @@ Covered in the e!cockpit readme:
 else:
 - An SSH client.
 - A local OPCUA-client. Recommeded: UAExpert. 
-- An account on the Docker-hub https://hub.docker.com/
+- An account on the [Docker-hub](https://hub.docker.com/)
 - Docker Desktop installed locally on your computer, with the setup complete and docker running. 
 - Git Bash (or something similar) installed locally to access local Docker commands on your computer.
 
