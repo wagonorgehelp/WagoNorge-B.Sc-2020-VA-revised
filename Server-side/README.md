@@ -110,7 +110,7 @@ Download and unzip the "Server Source Code.zip"-file.
 
 ### Log in:
  - Username: admin
- - Passord: admin
+ - Password: admin
 
 ### Choose database
 1. In the home menu, choose "Create a data source"
