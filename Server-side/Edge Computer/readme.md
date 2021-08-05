@@ -109,7 +109,7 @@ e.g.
 mqttBroker = "192.168.10.150"
 ``` 
 
-Push the new changes to the docker-hub by using the push.bat (make sure that docker is running with a builx builder running as well. How to do this is covered in the PLS-side setup readme). Make sure that your own docker-repository is set up within the push.bat files. 
+Push the new changes to the docker-hub by using the push.bat (make sure that docker is running with a builx builder running as well. How to do this is covered in the PLS-side setup readme. Make sure that your own docker-repository is set up within the push.bat files. 
 
 Use the docker-compose functionality (as used for the Google-cloud installating) to install the changed docker containers. 
 
