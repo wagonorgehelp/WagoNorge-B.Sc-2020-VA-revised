@@ -34,7 +34,7 @@ Access the the WBM for the appropiate Wago device, and repeat the process for al
 ### Installing CoDeSys OPC UA Server
 Wagos own OPC UA Server does no longer support the setup of multiple node IDs for structures and arrays. Therefore, for the OPCUA-MQTT-link to work, the CoDeSys OPC UA server needs to be installed via an IPK. 
 
-1. Download the IPK: https://wago.sharefile.eu/share/view/s311dc640445b497cb356dbc9fb4b20b5
+1. Download the [CoDeSys OPC UA FW18 IPK](https://wago.sharefile.eu/share/view/s311dc640445b497cb356dbc9fb4b20b5)
 2. Unpack/unzip it.
 3. In WBM: Configuration -> software Uploads. Upload the .ipk file. 
 4. Wait a couple of minutes for the software to install. 
@@ -43,7 +43,7 @@ Wagos own OPC UA Server does no longer support the setup of multiple node IDs fo
 ### Install Docker-ipk
 The OPCUA-MQTT-link runs as a Docker-container. Therefore docker needs to be installed on the device.
 
-Follow this guide: https://github.com/WAGO/docker-ipk
+Follow this guide [here](https://github.com/WAGO/docker-ipk)
 
 
 ## Setup in e!Cockpit
