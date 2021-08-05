@@ -9,7 +9,7 @@ Prerequisites:
  - Set up a google account.
  - "Enable the Compute Engine API"	
 
-https://cloud.google.com/ 
+[Google Cloud](https://cloud.google.com/) 
 
 Console -> Go to compute engine
 
@@ -29,7 +29,7 @@ Console -> Go to compute engine
 The cloud server should now be set up with Linux Ubuntu as the operating system. 
 
 ### Installing Docker on an Ubuntu machine
-Ref: https://docs.docker.com/engine/install/ubuntu/
+[Docker reference/manual](https://docs.docker.com/engine/install/ubuntu/)
 
 Connect to the instance by clicking SSH under connect. 
 
@@ -72,7 +72,7 @@ sudo docker version
 ```
 
 ### Installing Docker-compose. 
-Ref: https://docs.docker.com/compose/install/
+[Docker reference/manual](https://docs.docker.com/compose/install/)
 
  1. Download and install the last stable version of docker-compose:
 ```
@@ -147,9 +147,7 @@ Here you can browse the MySQL database, change things and read values.
 
 ## Monitoring the HiveMQ MQTT-broker
 
-By using the MQTT Websocket Client:
-
-http://www.hivemq.com/demos/websocket-client/
+By using the [MQTT Websocket Client](http://www.hivemq.com/demos/websocket-client/)
 
 1. Connect to the broker:
  	- Host: broker.hivemq.com
