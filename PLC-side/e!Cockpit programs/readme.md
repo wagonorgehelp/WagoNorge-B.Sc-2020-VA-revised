@@ -54,7 +54,7 @@ For the HMI it is recommended to use a large TP600 PIO3 panel. It could also run
 1. Dowload the e!Cockpit program. 
    - Option 1: Create a new project and import the .export files. 
    - Option 2: Download and run .ecp files. 
-2. Set it up with your desired controller. Either by changing the PLC type. If this causes unfixable errors: Add your controller and copy-paste the contents from the original controller. (libraries should be manually installed.
+2. Set it up with your desired controller. Either by changing the PLC type. If this causes unfixable errors: Add your controller and copy-paste the contents from the original controller. (libraries should be manually installed).
 3. Install the libraries (Library manager -> Add library).
    Required libraries:
    - CmpApp
