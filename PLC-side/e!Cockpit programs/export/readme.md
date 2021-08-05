@@ -9,7 +9,4 @@ Simply, import the .export to your projects.
 
 ### Setup
 
-Library Manager (and libraries) and Symbol Configuration must be added manually. 
-
-1. Add a Library Manager and add the following libraries:
-    - 
+Library Manager (and libraries) and Symbol Configuration must be added manually. As well as the visualization profile. This is covered in the readme in the above directory. 
