@@ -1,4 +1,9 @@
 # OPCUA-MQTT-link setup and installation
+### Functionality
+Ports data from the PLCs OPC UA-server and publishes them to a selected MQTT-broker. Moreover, it subscirbes to selected topics in the MQTT-broker and writes them to the OPC UA-server.
+
+- Uses [freeopcua python library](https://github.com/FreeOpcUa/python-opcua) as the OPC UA-client. 
+- Uses [eclipse paho mqtt](https://github.com/eclipse/paho.mqtt.python) as the MQTT-client
 
 ## Prerequisites
 Covered in the e!cockpit readme:
