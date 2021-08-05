@@ -174,7 +174,7 @@ ba/wago/sim/info
 ```
 ba/wago/sim/hmi/hmisub 
 ```
-Subjects that goes through e!cockpit:
+Subjects regarding process simulation (gathered by e!c and not OPCUA-MQTT-link):
 ```
 ba/wago/sim/plc1/plcpub 
 ba/wago/sim/plc1/plcsub 
