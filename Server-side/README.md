@@ -134,7 +134,7 @@ Download and unzip the "Server Source Code.zip"-file.
 
 
 ## Using Adminer to access the MySQL database
-
+Adminer is a developer tool included in the docker-compose install as a docker  container. It lets you access the MySQL database, check the values it stores and modify stuff. 
 1. Use your browser to connect to http://[server-ip]:8080
   (If unable to connect 1. make sure you're not trying to connect with https (it is usually autofilled), 2. Restart the adminer container.) 
  	- Username: root
