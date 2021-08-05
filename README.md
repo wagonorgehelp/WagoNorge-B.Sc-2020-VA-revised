@@ -9,7 +9,7 @@ Credits to the original authors:
 - Jone Vassbø 
 - Peder Ward
 
-Original repository https://github.com/Wago-Norge/Bachelorprosjekt-2020 (Curtain aspects are obsolete, missing installation steps and fixes are presented in this repository)
+[Original repository](https://github.com/Wago-Norge/Bachelorprosjekt-2020) (Curtain aspects are obsolete, missing installation steps and fixes are presented in this repository)
 
 ![VA-systemExplenation](https://user-images.githubusercontent.com/61655489/128310474-869abdb6-823f-4f6d-846c-a04802752f17.PNG)
 
