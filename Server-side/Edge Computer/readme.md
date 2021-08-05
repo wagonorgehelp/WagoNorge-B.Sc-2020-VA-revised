@@ -15,10 +15,22 @@ Instead of hosting the cloud-server externally on a 3rd-party server, it could a
 
 ### Installing Docker
 
+Follow this guide: https://docs.docker.com/engine/install/debian/
+
 ### Installing Docker Compose
+
+Follow this guide:  https://docs.docker.com/compose/install/
 
 ## Installing the Docker containers
 - Make sure that the servers MQTT-clients refers to the IP-adress of the edge-computer build and push the changes.
+
+1. Transfer the "docker-compose.yaml"-file to the device using and FTP-capable service like FileZilla. 
+2. Connect to the Edge Computer using an SSH-client, and navigate to the location of the "docker-compose.yaml"-file.
+3. Make sure none of the relevant docker images allready exists on the device, if so remove them to make sure that the latest images are downloaded (docker-compose will not pull an image if it exists on the device).
+4. Run the following command:
+```
+docker-compose up
+```
 
 
 ## Setting up the MQTT Broker
