@@ -7,6 +7,12 @@ Instead of hosting the cloud-server externally on a 3rd-party server, it could a
 ## Tips
  - Instead of using an SSH-client like PuTTY, there is a terminal available on: [ip-address of the edge-computer]:9090
 
+### Enable automatic boot on power up
+By default, the Edge Computer will have to be manually turned on by (ATX-mode). For most intents and purposes it is practical that it boots automatically when the device has power(AT-mode). This can be done by setting two dipswitches on the motherboard within the Edge Computer. 
+
+To find out how to do this, please download the Edge Computer manual (for [752-940x](https://www.wago.com/global/plcs-%E2%80%93-controllers/edge-computer/p/752-9400#downloads)).
+CTRL + F and search "SW1" and you will find where the switches are located and how to set them. There should be two dipswitches, and they should be set to the opposite of their default setting. 
+
 ## Prerequisites
  - a Wago Edge-Computer
  - An internet connection
