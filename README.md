@@ -16,7 +16,7 @@ Revived by:
 
 Obsolete aspects 07.2021 with Wago FW18 Patch 3:
 - Wago OPC UA not supportings multiple node IDs for structs and arrays anymore. Fixed by installing CoDeSys OPCUA. 
-- Cryptography (a required library for the OPC UA client not installing correctly). Fixed in the Dockerfiles by specifically installing version 3.1.1 and updating the PIP-  installer.
+- Cryptography (a required library for the OPC UA client) not being installed correctly. Fixed in the Dockerfiles by specifically installing version 3.1.1 and updating the PIP-  installer.
 
 ### Introduction to the system
 
