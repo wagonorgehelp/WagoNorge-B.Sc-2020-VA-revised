@@ -13,6 +13,7 @@ Revived by:
 - Victor Shaw Melhuus
 
 [Original repository](https://github.com/Wago-Norge/Bachelorprosjekt-2020) (Curtain aspects are obsolete, missing installation steps and fixes are presented in this repository)
+
 Obsolete aspects 07.2021 with Wago FW18 Patch 3:
     - Wago OPC UA not supportings multiple node IDs for structs and arrays anymore. Fixed by installing CoDeSys OPCUA. 
     - Cryptography (a required library for the OPC UA client not installing correctly). Fixed in the Dockerfiles by specifically installing version 3.1.1 and updating the PIP-  installer.
